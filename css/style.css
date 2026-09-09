@@ -226,8 +226,10 @@ p {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0.3rem 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.3rem 1.5rem;
+  /* 12rem gives 4 columns at full width, so 32 names read as 8 rows rather
+     than 11. Raise it to 14rem for 3 wider columns if long names wrap badly. */
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 }
 
 .people li {
