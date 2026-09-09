@@ -35,6 +35,8 @@ BIAS workshop paper.
 **Add a person.** In `people.html`, add one `<li>` to the right group
 (Director / Researchers and collaborators / Operations / Alumni), alphabetical by
 first name. Nobody carries an individual job title — the group heading says it.
+Alumni are the exception: each shows their current affiliation in a
+`<span class="affil">`, which is why that list uses the wider `people-wide` grid.
 
 **Add news.** Add one `<li>` at the top of the list in `news.html`, and mirror it
 at the top of the homepage list if it belongs there (the homepage shows the five

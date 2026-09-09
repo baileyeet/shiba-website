@@ -236,6 +236,20 @@ p {
   min-width: 0;
 }
 
+/* Alumni carry a current affiliation, so they need wider columns. */
+.people-wide {
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.affil {
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+
+.affil::before {
+  content: "— ";
+}
+
 
 /* ---------- contact ---------- */
 
