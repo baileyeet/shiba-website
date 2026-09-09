@@ -48,6 +48,8 @@ top of `css/style.css`; dark mode is derived from the same names.
 
 ## Outstanding
 
+- Split "Researchers and collaborators" into two groups — Bailey is providing the
+  list of who counts as a core researcher. Until then it stays as one group.
 - Slides PDF for the BIAS workshop paper (`assets/slides/`, then uncomment the
   link in `research.html`).
 - Five of the nine ported news items were deleted on request (Why We Study
