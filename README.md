@@ -43,8 +43,25 @@ top of `css/style.css`; dark mode is derived from the same names.
 Dashed boxes on the rendered page mean draft content. None should remain when
 the site goes live.
 
-## Deploy
+## Staging preview
 
-Any static host. For GitHub Pages: push this folder to a repo, then
-Settings → Pages → deploy from branch, root. Point `shiba-ai.jp` at it by adding
-a `CNAME` file containing `shiba-ai.jp` plus the DNS records GitHub shows.
+Live at **https://baileyeet.github.io/shiba-website/** — safe to share for
+review. Every push to `main` redeploys it within a minute or so.
+
+This is a staging URL, so the site is currently marked `noindex` (a meta tag in
+each page, plus `robots.txt`) to keep it out of search results while
+shiba-ai.jp is still the real site.
+
+## Going live on shiba-ai.jp
+
+Only do this when the content is signed off — it replaces the current site.
+
+1. Delete the `noindex` meta tag from all four HTML pages (each is flagged with
+   a `STAGING ONLY` comment) and delete `robots.txt`.
+2. Resolve anything left in **Outstanding** above.
+3. `echo shiba-ai.jp > CNAME`, commit, push.
+4. GitHub repo → Settings → Pages → Custom domain → `shiba-ai.jp`, then add the
+   DNS records GitHub shows at the domain registrar. Wait for the certificate,
+   then tick "Enforce HTTPS".
+
+Until step 3, shiba-ai.jp keeps serving the old site — nothing is swapped over.
