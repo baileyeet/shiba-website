@@ -181,6 +181,10 @@ p {
   margin-top: 0.15rem;
 }
 
+.pub-date {
+  color: var(--fg-muted);
+}
+
 /* ---------- people ---------- */
 
 .people {
