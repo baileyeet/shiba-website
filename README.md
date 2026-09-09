@@ -5,8 +5,9 @@ Layout and palette follow [robirahman.com](https://github.com/robirahman/robirah
 (930px measure, Roboto, blue links, near-black dark mode).
 
 ```
-index.html      Home: intro + recent papers
+index.html      Home: intro + latest news + recent papers
 research.html   All publications
+news.html       All news
 people.html     Members
 contact.html    Email, address, joining
 css/style.css   All styling for every page
@@ -31,7 +32,13 @@ title, arXiv link, authors, and venue.
 paper's `<span class="pub-links">`. There is a commented-out example on the
 BIAS workshop paper.
 
-**Add a person.** In `people.html`, add one `<li>` to the right group.
+**Add a person.** In `people.html`, add one `<li>` to the right group
+(Director / Researchers and collaborators / Operations / Alumni), alphabetical by
+first name. Nobody carries an individual job title — the group heading says it.
+
+**Add news.** Add one `<li>` at the top of the list in `news.html`, and mirror it
+at the top of the homepage list if it belongs there (the homepage shows the five
+most recent; trim the oldest one when you add).
 
 **Change a colour or spacing.** Everything lives in the `:root` variables at the
 top of `css/style.css`; dark mode is derived from the same names.
@@ -40,6 +47,14 @@ top of `css/style.css`; dark mode is derived from the same names.
 
 - Slides PDF for the BIAS workshop paper (`assets/slides/`, then uncomment the
   link in `research.html`).
+- Six news items had full article pages on the old Wix site (`/news/mythos-event`,
+  `/news/icml-2026`, `/news/openai_hackathon`, `/news/tara_graduation`,
+  `/news/oasec-advertise`, `/news/why-multi-agent-coordination`). Those bodies
+  were not ported, so those headlines are unlinked text. Copy the article text
+  out of Wix before the old site is taken down if it is worth keeping.
+- Two possible news items could not be confirmed on the old site: an Apr 22, 2026
+  item about Strahinja Janjusevic and maritime infrastructure security (MIT News),
+  and a Feb 11, 2026 preprint announcement. Add them if they are real.
 
 ## Staging preview
 
