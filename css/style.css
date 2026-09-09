@@ -84,14 +84,23 @@ a:hover {
 }
 
 .brand {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 700;
+  letter-spacing: -0.01em;
   color: var(--fg);
 }
 
 .brand:hover {
   color: var(--link);
   text-decoration: none;
+}
+
+/* On the homepage the brand IS the page's h1 — keep it at brand size. */
+.site-header h1 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
 }
 
 .nav {
@@ -128,15 +137,6 @@ h3 {
 
 p {
   margin: 0 0 1.1rem;
-}
-
-.subtitle {
-  color: var(--fg-muted);
-  margin: 0 0 1.5rem;
-}
-
-.muted {
-  color: var(--fg-muted);
 }
 
 .small {
