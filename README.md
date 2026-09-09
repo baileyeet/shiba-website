@@ -1,9 +1,11 @@
 # Shiba AI website
 
 Static site — plain HTML and one CSS file. No build step, no dependencies.
+Layout and palette follow [robirahman.com](https://github.com/robirahman/robirahman.github.io)
+(930px measure, Roboto, blue links, near-black dark mode).
 
 ```
-index.html      Home: overview + research topics + recent papers
+index.html      Home: intro + recent papers
 research.html   All publications
 people.html     Members
 contact.html    Email, address, joining
@@ -36,12 +38,8 @@ top of `css/style.css`; dark mode is derived from the same names.
 
 ## Outstanding
 
-- Application form URL (`contact.html`).
 - Slides PDF for the BIAS workshop paper (`assets/slides/`, then uncomment the
   link in `research.html`).
-
-Dashed boxes on the rendered page mean draft content. None should remain when
-the site goes live.
 
 ## Staging preview
 
